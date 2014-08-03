@@ -1,0 +1,38 @@
+@color-base: #000;
+@color-base-invert: #fff;
+
+@font-regular:'Helvetica Neue', 'Segoe UI', Segoe, Helvetica, Arial, 'Lucida Grande', sans-serif;
+@font-weight-thin: 100;
+@font-weight-regular: 300;
+@font-weight-medium: 400;
+@font-weight-bold: 700;
+
+.font-smoothing-default() {
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.font-smoothing-antialias() {
+    -webkit-font-smoothing: antialiased;
+}
+
+@size-regular: 16px;
+@size-s: 14px;
+@size-l: 20px;
+
+
+body {
+    color: @color-base;
+    background-color: @color-base-invert;
+
+    font-family: @font-regular;
+    font-weight: @font-weight-regular;
+    line-height: 1.3em;
+}
+
+a {
+    text-decoration: none;
+
+    color: @color-base;
+}
+
+

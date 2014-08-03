@@ -1,0 +1,41 @@
+.social-media {
+    padding: 11px 0;
+    & span {
+        display: inline-block;
+
+        vertical-align: top;
+    }
+    &_links {
+        display: inline-block;
+
+        vertical-align: top;
+        &_i {
+            display: inline-block;
+            & a {
+                display: block;
+                overflow: hidden;
+
+                width: 40px;
+                height: 20px;
+
+                text-indent: -9999px;
+
+                background: url('../img/20140129_pc_sprite.png') no-repeat;
+
+                font-size: 0;
+            }
+            &.__facebook a {
+                background-position: 0 -20px;
+            }
+            &.__twitter a {
+                background-position: -40px -20px;
+            }
+            &.__googleplus a {
+               background-position: -80px -20px; 
+            }
+            &.__youtube a {
+                background-position: -120px -20px;
+            }
+        }
+    }
+}
