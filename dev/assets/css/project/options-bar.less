@@ -1,0 +1,113 @@
+.options-bar {
+    padding:11px 0;
+
+    color:@color-base-invert;
+    background-color: #333;
+
+    font-size: @size-s;
+
+    .font-smoothing-antialias();
+    & a {
+        color:@color-base-invert;
+
+        font-weight: @font-weight-bold;
+    }
+    &_site-local {
+        display:inline-block;
+        & a:before {
+            display: inline-block;
+
+            width: 19px;
+            height: 19px;
+            padding-right:8px;
+
+            content: '';
+            vertical-align: top;
+
+            background: url('../img/20140217_pc_sprite.png') 0 0 no-repeat;
+        }
+        & a:after {
+            display: inline-block;
+
+            width: 10px;
+            height: 5px;
+
+            content: '';
+
+            background: url('../img/20140129_pc_sprite.png') -109px -12px no-repeat;
+        }
+    }
+    &_currency {
+        display:inline-block;
+
+        margin-left:20px;
+        & a:after {
+            display: inline-block;
+
+            width: 10px;
+            height: 5px;
+
+            content: '';
+
+            background: url('../img/20140129_pc_sprite.png') -109px -12px no-repeat;
+        }
+    }
+    &_support {
+        display: inline-block;
+
+        margin-left: 220px;
+    }
+    &_login {
+        position: relative;
+
+        display: inline-block;
+        & a {
+            padding:0 10px;
+        }
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 53%;
+
+            display: inline-block;
+
+            width: 1px;
+            height:21px;
+
+            content: '';
+
+            background: #5c5c5c;
+        }
+        & a:first-child:before {
+            display: inline-block;
+
+            width: 14px;
+            height: 14px;
+            padding-right: 6px;
+
+            content: '';
+            vertical-align: middle;
+
+            background: url('../img/20140129_pc_sprite.png') -43px -5px no-repeat;
+        }
+    }
+    &_cart {
+        display:inline-block;
+
+        margin-left: 5px;
+
+        opacity: .33;
+        & a:before {
+            display: inline-block;
+
+            width: 15px;
+            height: 14px;
+            padding-right: 3px;
+
+            content: '';
+            vertical-align: middle;
+
+            background: url('../img/20140129_pc_sprite.png') -63px -5px no-repeat;
+        }
+    }
+}

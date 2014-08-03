@@ -1,0 +1,68 @@
+.share-links {
+    float:right;
+    &_i {
+        display: inline-block;
+
+        margin-right:10px;
+        & a {
+            display: inline-block;
+
+            padding: 13px 0;
+        }
+        & a:before {
+            display: inline-block;
+
+            height: 20px;
+            padding-left: 20px;
+
+            content: '';
+            vertical-align: bottom;
+
+            color: @color-base;
+            background: url('../img/fos-share-sprite.png') no-repeat;
+
+            font-size: 11px;
+            font-weight:@font-weight-bold;
+        }
+        &.__google-plus a:before {
+            width: 32px;
+            height: 20px;
+            padding-left: 0;
+
+            background-position: 0 -44px;
+        }
+        &.__twitter a:before {
+            width: 42px;
+
+            content: 'Tweet';
+
+            background-position: 0 -22px;
+        }
+        &.__facebook a:before {
+            width: 30px;
+
+            content:'Like';
+
+            color: @color-base-invert;
+            background-position: 0 0;
+        }
+        &.__twitter a:after,
+        &.__facebook a:after {
+            display: inline-block;
+
+            width: 4px;
+            height:20px;
+
+            content: '';
+            vertical-align: bottom;
+
+            background: url('../img/fos-share-sprite.png') no-repeat;
+        }
+        &.__twitter a:after {
+            background-position: -196px -22px;
+        }
+        &.__facebook a:after {
+            background-position: -198px 0;
+        }
+    }
+}

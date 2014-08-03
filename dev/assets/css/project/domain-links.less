@@ -1,0 +1,42 @@
+.domain-links {
+    float:left;
+    &_i {
+        display: inline-block;
+
+        margin-left:10px;
+        & a { 
+            display: inline-block;
+
+            padding: 13px 0;
+        }
+        & a:before {
+            display: inline-block;
+
+            width: 20px;
+            height: 20px;
+            padding-left: 8px;
+
+            content: '';
+
+            background: url('../img/gdhp_sprite_20140317.png') no-repeat;
+        }
+        &.__co a:before {
+            background-position: -70px 1px;
+        }
+        &.__com a:before {
+            width: 40px;
+
+            background-position: -280px 3px;
+        }
+        &.__org a:before {
+            width: 30px;
+
+            background-position: -329px 2px;
+        }
+        &.__club a:before {
+            width: 32px;
+
+            background-position: -236px 4px;
+        }
+    }
+}

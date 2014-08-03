@@ -1,0 +1,71 @@
+.slider {
+    &_slide {
+        padding: 40px 70px 50px;
+        &_head {
+            text-align: left;
+
+            color: #222;
+
+            font-size: @size-l;
+            font-weight: @font-weight-regular;
+        }
+        &_text {
+            text-align: justify;
+            & p {
+                margin: 15px 0;
+
+                font-size: 14px;
+                & strong {
+                    font-weight: @font-weight-bold;
+                }
+            }
+        }
+    }
+    &_nav {
+        position: relative;
+        &_prev,
+        &_next, {
+            position:absolute;
+            top: -165px;
+
+            display: block;
+
+            width: 60px;
+            height: 60px;
+
+            transition: all .3s ease-in-out;
+        }
+        &_prev:hover,
+        &_next:hover, {
+            background-color: #dedede;
+        }
+        &_prev {
+            left: -60px;
+
+            background: url('../img/lp_sprite.png') no-repeat -30px -28px;
+        }
+        &_next {
+            right:-60px;
+
+            background: url('../img/lp_sprite.png') no-repeat 22px -28px;
+        }
+        &_switcher {
+            &_i {
+                display: inline-block;
+
+                padding: 15px;
+                & a {
+                    display: block;
+
+                    width: 25px;
+                    height: 7px;
+
+                    background-color: #dadada;
+                }
+                &.__active a {
+                    background-color: #70ac00;
+                }
+            }
+        }
+    }
+}

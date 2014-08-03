@@ -1,0 +1,54 @@
+.banner {
+    min-height: 460px;
+
+    background: url('../img/selena_top_marq.jpg') no-repeat top center;
+    background-size: cover;
+    & > .container {
+        text-align: center;
+    }
+    &_header {
+        width:425px;
+        margin: 0px auto;
+        padding: 11px 0;
+
+        text-transform: uppercase;
+
+        color:@color-base-invert;
+        background-color: #ff8a00;
+
+        font-size:30px;
+        font-weight: @font-weight-bold;
+        line-height:30px;
+    }
+    &_text {
+        width: 450px;
+        margin: 10px auto 0px;
+        padding-top: 10px;
+
+        color:@color-base-invert;
+
+        font-size: 43px;
+        font-weight: @font-weight-thin;
+        line-height: 50px;
+    }
+    &_price {
+        padding: 0px 0px 10px;
+
+        color: #ff8a00;
+
+        font-size: 87px;
+        font-weight: @font-weight-bold;
+        line-height: 87px;
+        &:after {
+            position: relative;
+            top: -30px;
+
+            content:'*';
+
+            font-size: .7em;
+        }
+    }
+    & .button {
+        font-size:@size-regular + 2px; 
+    }
+}
